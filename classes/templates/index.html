@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KrastiTuitionClasses - Education Is About Academic Excellence</title>
+
+
+
+  <link rel="stylesheet" href="static/css/style.css">
+
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body id="top">
+
+
+  <header class="header" data-header>
+    <div class="container">
+
+      
+       <a href="#"><img src="static/images/logo.jpeg" alt="" class="logo"></a>
+      
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="static/images/logo.jpeg" class="logo"></a>
+
+          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'index' %}" class="navbar-link" data-nav-toggler>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-toggler>About</a>
+          </li>
+
+          <li class="navbar-item">
+            <div class="dropdown">
+              <a href="#catcourse"  class="navbar-link" class="dropbtn" data-nav-toggler>Courses</a>
+
+              <div class="dropdown-content">
+                <a href="#k1">Kids Learning</a>
+                <a href="#a1">Academic Classes</a>
+                <a href="#r">Rashtriya Military School</a>
+                <a href="#s">Sainik School</a>
+                <a href="#n">Navodaya Vidyalaya</a>
+                <a href="#ol">Other Classes</a>
+              </div>
+            </div>
+            
+            
+          </li>
+
+          <li class="navbar-item">
+            <div class="dropdown">
+              <a href="{% url 'notice' %}" class="navbar-link" data-nav-toggler>Notice</a>
+              <!-- <div class="dropdown-content" id="eve">
+                <a href="#">Notice/Download</a>
+                <a href="#">Events</a>
+                <a href="#">Other Notice</a>
+              </div> -->
+            </div>
+          </li>
+
+          <li class="navbar-item">
+            <div class="dropdown">
+              <a href="{% url 'gallery' %}" class="navbar-link" data-nav-toggler>Gallery</a>
+              <div class="dropdown-content" id="gal">
+              </div>
+            </div>
+          </li>
+          <li class="navbar-item">
+            <a href="{% url 'enquiry'  %}" class="navbar-link" data-nav-toggler>Enquiry</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contactus" class="navbar-link" data-nav-toggler>Contact us</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="Open search" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+
+        <a href="{% url 'signup' %}" class="header-action-btn login-btn">
+          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+          <span class="span">Login / Register</span>
+        </a>
+
+        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-box>
+    <div class="container">
+
+      <button class="search-close-btn" aria-label="Close search" data-search-toggler>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="search-wrapper">
+        <input type="search" name="search" placeholder="Search Here..." aria-label="Search" class="search-field">
+
+        <button class="search-submit" aria-label="Submit" data-search-toggler>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="hero" style="background-image: url('static/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle">Better Learning Future With Us</p>
+
+            <h2 class="h1 hero-title">Education Is About Academic Excellence</h2>
+
+            <p class="hero-text">
+              Our wide network of faculty includes honest, empathetic, and skilled teachers who will always stand beside the students to motivate and encourage them to keep learning and developing their minds in a way that empowers students to face current and future challenges.
+ 
+Our team is dedicated to a continuing tradition of excellence in a dynamic world that helps students develop the knowledge, critical thinking skills, and character necessary to succeed in a technologically advanced world.
+
+            </p>
+
+            <a href="#" class="btn btn-primary">
+              <span class="span">Get Started Today</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+            
+
+          </div>
+
+          <figure class="hero-banner">
+
+            <img src="static\images\fotor-20240216205150.png" width="500" height="500" loading="lazy" alt="hero image"
+              class="w-100">
+
+            <img src="static\images\download-fotor-2024021621037.png" width="318" height="352" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="static\images\images-fotor-2024021621257.png" width="160" height="160" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2">
+
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+   
+
+      <section class="section category" id="catcourse" aria-label="category">
+        <div class="container">
+
+          <p class="section-subtitle">Course Categories</p>
+
+          <h2 class="h2 section-title">Popular Topics To Learn With Our Best Educator</h2>
+
+          <h1 class="h2 section-title" id="k1">KIDS LEARNING</h1>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="static/pdfs/Sept_Shubham_Resume (1).pdf">1</a>
+                  </h3>
+
+                  <span class="card-meta">39 Course</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="file-tray-full-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">2</a>
+                  </h3>
+
+                  <span class="card-meta">24 Course</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">3</a>
+                  </h3>
+
+                  <span class="card-meta">39 Course</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="layers-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">4</a>
+                  </h3>
+
+                  <span class="card-meta">39 Course</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="laptop-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">5</a>
+                  </h3>
+
+                  <span class="card-meta">39 Course</span>
+                </div>
+
+              </div>
+            </li>
+
+          </ul> <br><br>
+
+
+
+          
+          <h1 class="h2 section-title" id="a1">ACADEMIC CLASSES</h1>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">6</a>
+                  </h3>
+
+                  <span class="card-meta">39 Course</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="file-tray-full-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">7</a>
+                  </h3>
+
+                  <span class="card-meta">24 Course</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">8</a>
+                  </h3>
+
+                  <span class="card-meta">39 Course</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="layers-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">9</a>
+                  </h3>
+
+                  <span class="card-meta">39 Course</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="laptop-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">10</a>
+                  </h3>
+
+                  <span class="card-meta">39 Course</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="laptop-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">11</a>
+                  </h3>
+
+                  <span class="card-meta">39 Course</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="laptop-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">12</a>
+                  </h3>
+
+                  <span class="card-meta">39 Course</span>
+                </div>
+
+              </div>
+            </li>
+
+          </ul><br> <br>
+
+
+          
+          <h1 class="h2 section-title" id="o1">OTHER CLASSES</h1>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="briefcase-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">English Speaking Grammar</a>
+                  </h3>
+
+                  <span class="card-meta">39 Course</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="file-tray-full-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">Kids Coding</a>
+                  </h3>
+
+                  <span class="card-meta">24 Course</span>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="category-card">
+
+                <div class="card-icon">
+                  <ion-icon name="color-palette-outline"></ion-icon>
+                </div>
+
+                <div>
+                  <h3 class="h3 card-title">
+                    <a href="#">Yoga Classes</a>
+                  </h3>
+
+                  <span class="card-meta">39 Course</span>
+                </div>
+
+              </div>
+            </li>
+
+            
+
+           
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+      <section class="section about" id="about" aria-label="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="static/images/about-banner.jpg" width="450" height="590" loading="lazy" alt="about banner"
+              class="w-100 about-img">
+
+            <img src="static/images/al2.avif" width="188" height="242" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-1">
+
+            <img src="static/images/about-abs-2.jpg" width="150" height="200" loading="lazy" aria-hidden="true"
+              class="abs-img abs-img-2">
+<br>
+              
+<div class="dropdown1">
+  <button id="myBtn" class="dropbtn1"><h1>Why Join Krasti Classes</h1></button>
+  <div id="myDropdown" class="dropdown-content1">
+    <p>
+    •	Experts and Experienced Team <br>
+•	Personal attention on each Student <br>
+•	Personal doubt sessions<br>
+•	Completion of School Syllabus<br>
+•	Problem Solving Assessment Session for 1st to 10th<br>
+•	Separate Batches for CBSE & MP Board<br>
+•	Regular Classes Tests<br>
+•	Small Batch Size<br>
+•	Personal Attention<br>
+•	Improve Speed & Accuracy<br>
+•	Study Material<br>
+•	Highly Professional and Experienced Faculty<br>
+•	Proper Class Timing<br>
+•	Regular Classes<br>
+•	Guaranteed Syllabus Complete<br>
+•	Parents Involvement<br>
+•	Library Facility<br>
+
+    </p>
+  </div>
+</div>
+          </figure>
+          
+
+          <div class="about-content">
+
+          
+
+            <ul class="about-list">
+
+              <li class="about-item">
+
+                <div class="item-icon item-icon-1">
+                  <img src="static/images/about-icon-1.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">WELCOME TO KRASTI TUITION CLASSES</h3>
+
+                  <p class="item-text">
+                    Anybody who wants to be successful in examinations like 1st To 10th and 11th,12th  want to study in Special English needs two things- Proper Guidance and Proper Environment. Here in krasti tuition , we have experienced GURUs who are working for more than two decades shaping career of students by giving them proper guidance and creating an environment in which student can enjoy the study.
+                    
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="item-icon item-icon-1">
+                  <img src="static/images/about-icon-1.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Mission</h3>
+
+                  <p class="item-text">
+                    Our mission is to develop a safe space education
+                    the system both, online and offline for children where our
+                    wide network of faculty and parents collaborate together
+                    to develop social awareness, civic responsibility, and
+                    personal growth.
+                    
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="item-icon item-icon-2">
+                  <img src="static/images/about-icon-2.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Vision</h3>
+
+                  <p class="item-text">
+                    We,at krasti tuition classes, strongly believe every child’s
+learning capacity and journey are different. Hence, it is
+our goal is to provide a platform that is flexible to the
+preferences of the students and parents in order to
+encourage children to develop to their full potential.
+Excellence in Education Striving for academic excellence by providing  instruction, comprehensive learning materials, and expert guidance to help students reach their full potential in their chosen subjects.
+
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="item-icon item-icon-3">
+                  <img src="static/images/about-icon-1.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">Commitment</h3>
+
+                  <p class="item-text">
+                    Pioneering and preparing students for the future. lmpart knowledge that can lay strong foundation for the future.Treat everyone with respect and Fairness.
+
+                  </p>
+                </div>
+
+              </li>
+              <li class="about-item">
+
+                <div class="item-icon item-icon-1">
+                  <img src="static/images/about-icon-1.png" width="30" height="30" loading="lazy" aria-hidden="true">
+                </div>
+
+                <div>
+                  <h3 class="h3 item-title">STUDENT MONITORING</h3>
+
+                  <p class="item-text">
+                    Attendance,CCTV Surveillance Classroom ,SMS Alerts,Emails & Notifications.
+                    
+                  </p>
+                </div>
+
+              </li>
+              
+
+            </ul>
+
+            <a href="#" class="btn btn-primary">
+              <span class="span">Know About Us</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+   
+
+      <section class="section course" id="courses" aria-label="course"
+        style="background-image: url('static/images/course-bg.jpg')">
+        <div class="container">
+
+          <p class="section-subtitle">Popular Courses</p>
+
+          <h2 class="h2 section-title">Our Popular Courses</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="static/images/p1.jpg" width="370" height="270" loading="lazy"
+                    alt="Competitive Strategy law for all students" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Intermediate</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">35 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">..</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">English Speaking Course</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(108 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span"></span>
+
+                      <del class="del"></del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">47 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="static/images/p3.jpg" width="370" height="270" loading="lazy"
+                    alt="Building A Better World One Student At A Time" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Advanced</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">36 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">..</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">1 to 12</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(96 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span"></span>
+
+                      <del class="del"></del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">91 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="course-card">
+
+                <figure class="card-banner">
+                  <img src="static/images/p2.jpg" width="370" height="270" loading="lazy"
+                    alt="Education is About Forming Faithful Disciples" class="img-cover">
+                </figure>
+
+                <div class="card-actions">
+
+                  <span class="badge">Basic</span>
+
+                  <button class="whishlist-btn" aria-label="Add to whishlist" data-whish-btn>
+                    <ion-icon name="heart"></ion-icon>
+                  </button>
+
+                </div>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="reader-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">21 Lessons</span>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <time datetime="PT18H15M44S" class="card-meta-text">..</time>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Coding</a>
+                  </h3>
+
+                  <div class="rating-wrapper">
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <span class="rating-text">(68 Review)</span>
+
+                  </div>
+
+                  <div class="card-footer">
+
+                    <div class="card-price">
+                      <span class="span"></span>
+
+                      <del class="del"></del>
+                    </div>
+
+                    <div class="card-meta-item">
+                      <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="card-meta-text">22 Students</span>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-primary">
+            <span class="span">View All Courses</span>
+
+            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+      </section>
+
+
+
+
+
+      
+      <section class="section cta" aria-label="workshop" style="background-image: url('./assets/images/cta-bg.png')">
+        <div class="container">
+
+          <figure class="cta-banner">
+            <img src="static/images/f1.jpg" width="580" height="380" loading="lazy" alt="cta banner"
+              class="img-cover">
+          </figure>
+
+          <div class="cta-content">
+
+            <p class="section-subtitle">Free Workshop</p>
+
+            <h2 class="h2 section-title">Join Our Free Workshops</h2>
+
+            <p class="section-text">
+              Join one of our beginners coding classes and discover what it’s like to learn how to code. Explore the fundamentals and work on a hands-on coding activity to better understand what coding is all about, as well as the benefits it can offer you.
+            </p>
+
+            <a href="#" class="btn btn-secondary">
+              <span class="span">Upcomming Workshop</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+ 
+
+
+
+    
+
+     <section class="section event" id="event" aria-label="event">
+        <div class="container">
+
+          <p class="section-subtitle">Upcomming Event</p> 
+          
+
+          <!-- <h2 class="h2 section-title">Let’s Join Our Community</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="event-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/event-1.jpg" width="370" height="250" loading="lazy"
+                    alt="Innovation & Technological Entrepreneurship Team" class="img-cover">
+                </figure>
+
+                <time class="badge" datetime="2022-12-04">04 Dec 2022</time>
+
+                <div class="card-content">
+
+                  <address class="card-address">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">Alpaca Way Anaheim, CA 92805</span>
+                  </address>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Innovation & Technological Entrepreneurship Team</a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Get Ticket</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/event-2.jpg" width="370" height="250" loading="lazy"
+                    alt="Virtual Spring Part-time Jobs Fair for Student" class="img-cover">
+                </figure>
+
+                <time class="badge" datetime="2022-10-30">30th Oct 2022</time>
+
+                <div class="card-content">
+
+                  <address class="card-address">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">Ritter Avenue Detroit, MI 48226</span>
+                  </address>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Virtual Spring Part-time Jobs Fair for Student</a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Get Ticket</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/event-3.jpg" width="370" height="250" loading="lazy"
+                    alt="Explorations of Regional Chief Executive Network" class="img-cover">
+                </figure>
+
+                <time class="badge" datetime="2022-09-18">18th Sep 2022</time>
+
+                <div class="card-content">
+
+                  <address class="card-address">
+                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                    <span class="span">Stout Street York, PA 17401</span>
+                  </address>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Explorations of Regional Chief Executive Network</a>
+                  </h3>
+
+                  <a href="#" class="btn-link">
+                    <span class="span">Get Ticket</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul> -->
+
+        </div>
+      </section>
+
+
+
+
+
+
+      <section class="section newsletter" aria-label="newsletter"
+        style="background-image: url('static/images/newsletter-bg.jpg')">
+        <div class="container">
+
+          <p class="section-subtitle">Subscribe Newsletter</p>
+
+          <h2 class="h2 section-title">Get Every Latest News</h2>
+
+          <form action="" class="newsletter-form">
+
+            <div class="input-wrapper">
+              <input type="email" name="email_address" aria-label="email" placeholder="Enter your mail address" required
+                class="email-field">
+
+              <ion-icon name="mail-open-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+          </form>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+
+  <footer class="footer" id="contactus">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo"><img src=static/images/logo.jpeg" alt="" class="logo"></a>
+
+          <p class="section-text">
+            Focusing on Results and Giving the most reliable service to the parents seeking  tuition classes in Gwalior. Along with academic subjects,we also focuses on activity classes like yoga,motivation
+            We also provide the facility of demo classes for free such that parents can check the teachers performance.
+            Education is an essential part of individual growth, societal progress, and economic development.
+            
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.facebook.com/krastituitionclasses.gwalior/" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="krastituition@gmail.com" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Explore</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">About Us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Upcoming Events</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Blog & News</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">FAQ Question</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Testimonial</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Privacy Policy</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Useful Links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Contact Us</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Pricing Plan</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Instructor Profile</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">FAQ</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Popular Courses</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+
+              <span class="span">Terms & Conditions</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Info</p>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+            <address class="footer-link">
+              Purohit Market, Near Abhinandan Vatika, Bhind Road, Gwalior
+            </address>
+          </li>
+
+
+          <li class="footer-item">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+            <address class="footer-link">
+              Phoolbagh Railway Crossing Sai Baba Road Gwalior
+            </address>
+          </li>
+
+        
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+13647657839" class="footer-link">9516001950</a>
+          </li>
+
+          <li class="footer-item">
+            <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+            <a href="tel:+13647657840" class="footer-link">8965975222</a>
+          </li>
+
+         
+          <li class="footer-item">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+            <a href="#" class="footer-link">krastituition@gmail.com</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          Copyright 2024 KrastiTuitionClasses. All Rights Reserved by <a href="#" class="copyright-link">KrastiTuitionClasses</a>
+        </p>
+      </div>
+
+    </div>
+  </footer> 
+
+
+
+
+
+
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="arrow-up"></ion-icon>
+  </a>
+
+
+
+  <script>
+    // Get the button, and when the user clicks on it, execute myFunction
+    document.getElementById("myBtn").onclick = function() {myFunction()};
+    
+    /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    </script>
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="static/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

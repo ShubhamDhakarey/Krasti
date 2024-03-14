@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/login.css">
+    <title>Login page in HTML</title>
+</head>
+<body>
+    <h1>Register Here</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+
+        <!-- Main container for all inputs -->
+        <div class="mainContainer">
+            <!-- Username -->
+            <label for="username">Your username</label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+
+            <br><br>
+            <label for="phone">Your Number</label>
+            <input type="text" placeholder="Enter Username" name="number" required>
+
+            <br><br>
+            <label for="email">Your Email</label>
+            <input type="text" placeholder="Enter Username" name="email" required>
+
+            <br><br>
+
+            <!-- Password -->
+            <label for="password">Your password</label>
+            <input type="password" placeholder="Enter Password" name="password1" required>   <br><br>
+            <label for="password">Confirm password</label>
+            <input type="password" placeholder="Enter Password" name="password2" required>   <br><br>
+
+            <p>Upload Image<input type="file" name="image" required></p>
+
+         
+
+
+            <!-- Submit button -->
+            <button type="submit">Register</button>
+
+            <!-- Sign up link -->
+            <p class="register">You Have Allready Register?  <a href="{% url 'login' %}">Login here!</a></p>
+
+        </div>
+
+    </form>
+</body>
+</html>
